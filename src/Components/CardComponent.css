@@ -1,0 +1,69 @@
+.card-component{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+
+/* Стилове за Card */
+.card {
+    width: 400px;
+    border: 1px solid #ddd; /* Цвят на границата на картата */
+    border-radius: 8px; /* Закръгление на ъглите */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Сянка за ефект на подемане */
+    margin: 16px; /* Отстъп от картата до други елементи */
+    /* overflow: hidden; Скриване на излишния съдържание (ако има) */
+    transition: transform 0.2s ease-in-out; /* Плавен преход при ховър */
+    padding: 30px;
+  }
+  
+  .card:hover {
+    transform: scale(1.02); /* Увеличение на картата при ховър */
+  }
+  
+  /* Заглавие на картата */
+  .card-title {
+    font-size: 1.5rem; /* Големина на шрифта за заглавието */
+    margin-bottom: 8px; /* Отстъп отдолу на заглавието */
+  }
+  
+  /* Съдържание на картата */
+  .card-content {
+    padding: 16px; /* Отстъп от съдържанието до границите на картата */
+  }
+  
+  /* Снимка на картата */
+  .card-image {
+    width: 60%; /* Напълване на ширината на картата */
+    height: 50%;
+    border-bottom: 1px solid #ddd; /* Цвят на границата между снимката и останалата част на картата */
+  }
+  
+  /* Бутон за прочитане на статията (пример) */
+/* Стилове за бутона */
+.btn {
+    display: inline-block;
+    padding: 10px 20px; /* Размер на отстъпите на бутона */
+    font-size: 16px; /* Големина на шрифта на бутона */
+    font-weight: bold; /* Дебелина на шрифта */
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    border: none; /* Премахване на граница на бутона */
+    border-radius: 5px; /* Закръгленост на ръбовете на бутона */
+    background-color: #007bff; /* Цвят на фона на бутона */
+    color: #fff; /* Цвят на текста на бутона */
+    transition: background-color 0.3s ease; /* Плавна анимация при промяна на цвета на фона */
+    margin-bottom: 20px; /*Падинг на бутона от долу */
+  }
+  
+  /* Стилове за ховър ефект (при преминаване с мишката) */
+  .btn:hover {
+    background-color: #0056b3; /* Промяна на цвета на фона при ховър ефект */
+  }
+  
+  /* Стилове за активен бутон (при натискане) */
+  .btn:active {
+    background-color: #003366; /* Промяна на цвета на фона при натискане */
+  }
+  

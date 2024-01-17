@@ -1,0 +1,59 @@
+/* Стилове за NavBar */
+
+/* Основни стилове за голям екран */
+.navBar {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    background-color: #007bff; /* Цвят на навигационния бар */
+    color: #fff; /* Цвят на текста */
+    font-size: 1.5rem; /* Големина на шрифта */
+    height: 60px;
+
+    
+  }
+ 
+
+  
+  .nav-item {
+    margin-right: 15px; /* Отстъп между елементите в навигационния бар */
+  }
+  
+  a {
+    color: #fff; /* Цвят на текста за линковете */
+    text-decoration: none;
+    padding: 5px;
+  }
+  .navMenuBox{
+    width: auto;
+    padding-right: 30px;
+  }
+  
+  /* Стилове за хамбъргер меню при по-малък екран */
+  @media (max-width: 768px) {
+    .navbar-toggler {
+      border: none; /* Премахване на бордюра на хамбъргер бутона */
+      color: #fff; /* Цвят на текста на хамбъргер бутона */
+    }
+  
+    .navbar-toggler-icon {
+      background-color: #fff; /* Цвят на иконата на хамбъргер бутона */
+    }
+  
+    .navbar-collapse {
+      background-color: #007bff; /* Цвят на хамбъргер менюто */
+      padding: 15px; /* Отстъп вътре в хамбъргер менюто */
+    }
+  
+    .navbar-nav {
+      width: 100%; /* Заемете цялата ширина на екрана */
+      text-align: center; /* Центриране на текста в хамбъргер менюто */
+      margin-top: 10px; /* Отстъп отгоре */
+    }
+  
+    .nav-item {
+      margin-right: 0; /* Нулиране на отстъпа за малък екран */
+      margin-bottom: 10px; /* Отстъп между елементите в хамбъргер менюто */
+    }
+  }
+  
