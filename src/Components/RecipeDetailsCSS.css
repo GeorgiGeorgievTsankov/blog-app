@@ -1,0 +1,7 @@
+.detailComponents {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 60%;
+    min-height: 100vh;
+}
