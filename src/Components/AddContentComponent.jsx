@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react'
 import './AddContent.css'
 import { useHistory } from 'react-router-dom/cjs/react-router-dom.min';
@@ -16,15 +15,23 @@ export const AddContentComponent = () => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
+
+        if (!title || !category || !body ) {
+            return window.alert("There are empty fields.Please fill in all fields");
+        
+        }
+
         const data = {title,category,body};
 
+      setTimeout( () => {
         fetch('http://localhost:8000/recipe',{
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json'},
-        body: JSON.stringify(data)
-        })
-
-        goTo.push("/");
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json'},
+            body: JSON.stringify(data)
+            })
+    
+            goTo.push("/");
+      },[500])
     }
 
 
