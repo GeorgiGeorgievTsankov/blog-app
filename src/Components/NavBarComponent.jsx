@@ -1,5 +1,6 @@
 import React from 'react'
 import './NavBarComponent.css'
+import { Link } from 'react-router-dom'
 
 
 
@@ -7,9 +8,8 @@ function NavBarComponent() {
   return (
    <div className="navBar">
     <div className="navMenuBox">
-    <a href="/">Home</a>
-    <a href="/blog">Blog</a>
-    <a href="/add">Add</a>
+    <Link to="/" >Home</Link>
+    <Link to="/add-content">Add</Link>
     </div>
    </div>
   )
